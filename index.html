@@ -6,11 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header-logo" src="#" alt="Логотип Device">
+      <a class="header-logo-link">
+        <img class="page-header-logo" src="#" alt="Логотип Device">
+      </a>
       <nav class="navigation">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <input type="search" placeholder="Текст поиска">
+            <label>
+              <input type="search" placeholder="Текст поиска">
+            </label>
             <a class="navigation-link" href="#">Найти</a>
           </li>
           <li class="navigation-item">
@@ -45,18 +49,18 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
-      <section class="gallary">
+      <section class="gallery">
         <h2 class="visually-hidden">Рекомендуемые устройства</h2> 
-        <div class="gallary-item">
-          <div class="device current-divece">
+        <div class="gallery-item">
+          <div class="device current-device">
             <button class="slider-button slider-prev" type="button">Предыдущее фото</button>
             <img class="slider-image" src="#" alt="квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру">
             <button class="slider-button slider-next" type="button">Следующее</button>
           </div>
           <div class="slider-description-current">
             <h3 class="visually-hidden"> Квадрокоптер оснащен мощным лазером</h3>
-            <b class="gallary-image-title">Порхает как бабочка,жалит как пчела!</b>
-            <p class="gallary-image-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            <b class="gallery-image-title">Порхает как бабочка,жалит как пчела!</b>
+            <p class="gallery-image-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
             <button class="button" type="button">Подробнее</button>
             <table class="characteristics-device">
@@ -71,16 +75,16 @@
             </table>
           </div>
         </div>
-        <div class="gallary-item visually-hidden">
-          <div class="divece">
+        <div class="gallery-item visually-hidden">
+          <div class="device">
             <button class="slider-button slider-prev" type="button">Предыдущее фото</button>
             <img class="slider-image" src="#" alt="Фитнес браслет">
             <button class="slider-button slider-next" type="button">Следующее</button>
           </div>
           <div class="slider-description-current">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
-            <b class="gallary-image-title">Худеем правильно!</b>
-            <p class="gallary-image-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+            <b class="gallery-image-title">Худеем правильно!</b>
+            <p class="gallery-image-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <button class="button" type="button">Подробнее</button>
             <table class="characteristics-device">
@@ -93,21 +97,21 @@
             </table>
           </div>
         </div>
-        <div class="gallary-item visually-hidden">
-          <div class="divece">
+        <div class="gallery-item visually-hidden">
+          <div class="device">
             <button class="slider-button slider-prev" type="button">Предыдущее фото</button>
             <img class="slider-image" src="#" alt="Длинная складная палка для селфи">
             <button class="slider-button slider-next" type="button">Следующее</button>
           </div>
           <div class="slider-description-current">
             <h3 class="visually-hidden">Селфи-палка</h3>
-            <b class="gallary-image-title">Делай селфи, как Бен Стиллер! </b>
-            <p class="gallary-image-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+            <b class="gallery-image-title">Делай селфи, как Бен Стиллер! </b>
+            <p class="gallery-image-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
             <button class="button" type="button">Подробнее</button>
             <table class="characteristics-device">
               <tr>
-                <td class="characteristic-value"><b class="">8,5 м</b></td>
+                <td class="characteristic-value"><b>8,5 м</b></td>
                 <td class="characteristic-value"><b>5 кг</b></td>
                 <td class="characteristic-value"><b>Карбон</b></td>
               </tr>
@@ -137,7 +141,7 @@
         <li class="service-item">
           <a class="service-link" href="#">
             <img class="service-image" src="#" alt="Экшн-камера">
-            <span>Экшн-камеры</span>
+            <span class="service-name">Экшн-камеры</span>
           </a>
         </li>
         <li class="service-item">
@@ -176,19 +180,19 @@
           <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img class="advantages-image" src="#" alt="">
+          <img class="advantages-image" src="#" alt="Стремимся доставить ваш товар в кратчайшие сроки">
         </div>
         <div class="advantages-description visually-hidden">
           <h3 class="advantages-title">Гарантия</h3>
           <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
-          <img class="advantages-image" src="#" alt="">
+          <img class="advantages-image" src="#" alt="Гарантируем бесплатную замену товара">
         </div>
         <div class="advantages-description visually-hidden">
           <h3 class="advantages-title">Кредит</h3>
           <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          <img class="advantages-image" src="#" alt="">
+          <img class="advantages-image" src="#" alt="Товар вы можете взять в кредит">
         </div>
       </section>
       <h2 class="visually-hidden">Доставка товара</h2> 
@@ -205,13 +209,13 @@
         </p>
         <ul class="transport-company-list">
           <li class="transport-company-item">
-            <b class="transport-company-name">Меловые линии</b>
+            <span class="transport-company-name">Меловые линии</span>
           </li>
           <li class="transport-company-item">
-            <b class="transport-company-name">СДИК</b>
+            <span class="transport-company-name">СДИК</span>
           </li>
           <li class="transport-company-item">
-            <b class="transport-company-name">ТоксБерри</b>
+            <span class="transport-company-name">ТоксБерри</span>
           </li>
         </ul>
         <a class="about-us-link" href="#">Подробнее о нас</a>
@@ -240,7 +244,7 @@
             <input type="email" name="user-mail" placeholder="Ваш e-mail" >
           </label>
           <button class="button button-subscribe" type="submit">Подписаться</button>
-          <span>Это бесплатно</span>
+          <span class="signature-free">Это бесплатно</span>
         </form>
       </section>
     </main>
