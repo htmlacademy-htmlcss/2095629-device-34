@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rubik" ;
-    src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Rubik";
-    src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
     font-style: normal;
     font-weight: 800;
     font-display: swap;
@@ -36,9 +36,6 @@ body {
     background-color:#ffe17f;
 }
 /* Navigation */
-.navigation-list { 
-    list-style-type: none;
-}
 .navigation-link { 
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -99,15 +96,11 @@ body {
     color: #444444;
 }
 
-/* Service list */
+/* Service */
 .service-link  {
     text-decoration: none;
 }
 
-.service-list,
-.advantages-list { 
-    list-style-type: none;
-}
 .service-name { 
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -122,6 +115,26 @@ body {
     background-color: #FFE17F;
 }
 
+
+/* List */
+.service-list,
+.advantages-list,
+.navigation-list,
+.pagination { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination a { 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    opacity: 0.3;
+    text-decoration: none;
+} 
 
 /* Advantages */
 .advantages { 
@@ -292,6 +305,7 @@ a.contact-address-text {
     text-decoration: none;
     color: #000000;
 }
+
 .product-card-title { 
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
@@ -301,26 +315,13 @@ a.contact-address-text {
 
 .product-card-price { 
     font-family: 'Rubik', sans-serif;
-
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color :#444444;
+    color: #444444;
 }
 
+/* Main */
 .main-inner { 
     background-color: #F0F0F0;
-}
-.pagination { 
-    list-style-type: none;
-}
-
-.pagination a { 
-    font-family: 'Rubik';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #444444;
-    opacity: 0.3;
-    text-decoration: none;
 }
