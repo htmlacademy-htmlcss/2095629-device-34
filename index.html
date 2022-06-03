@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Header -->
@@ -34,7 +35,6 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <button class="product-catalog" type="button">Каталог товаров</button>
-            <button class="product-catalog" type="button"> + </button>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -55,6 +55,7 @@
       <section class="gallery">
         <h2 class="visually-hidden">Рекомендуемые устройства</h2> 
         <div class="gallery-item">
+          <span class="gallery-item-number">01</span>
           <div class="device current-device">
             <button class="slider-button slider-prev" type="button">Предыдущее фото</button>
             <img class="slider-image" src="images/slider/quadrocopter.png" width="560" height="560" alt="квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру">
@@ -68,20 +69,21 @@
             <button class="button" type="button">Подробнее</button>
             <table class="characteristics-device">
               <tr>
-                <td class="characteristic-value"><b>800 м</b></td>
-                <td class="characteristic-value"><b>50 м</b></td>
+                <td class="characteristic-value"><span>800 м</span></td>
+                <td class="characteristic-value"><span>50 м</span></td>
               </tr>
               <tr>
-                <th class="characteristic-name">Дальность полета</th>
-                <th class="characteristic-name">Радиус поражения</th>
+                <th class="characteristic-name"><span>Дальность полета</span></th>
+                <th class="characteristic-name"><span>Радиус поражения</span></th>
               </tr>
             </table>
           </div>
         </div>
         <div class="gallery-item visually-hidden">
+          <span class="gallery-item-number">02</span>
           <div class="device">
             <button class="slider-button slider-prev" type="button">Предыдущее фото</button>
-            <img class="slider-image" src="#" alt="Фитнес браслет">
+            <img class="slider-image" src="images/slider/smart-watch.png" alt="Фитнес браслет">
             <button class="slider-button slider-next" type="button">Следующее</button>
           </div>
           <div class="slider-description-current">
@@ -92,18 +94,19 @@
             <button class="button" type="button">Подробнее</button>
             <table class="characteristics-device">
               <tr>
-                <td class="characteristic-value"><b>48 часов</b></td>
+                <td class="characteristic-value"><span>48 часов</span></td>
               </tr>
               <tr>
-                <th class="characteristic-name">Без подзарядки</th>
+                <th class="characteristic-name"><span>Без подзарядки</span></th>
               </tr>
             </table>
           </div>
         </div>
         <div class="gallery-item visually-hidden">
+          <span class="gallery-item-number">03</span>
           <div class="device">
             <button class="slider-button slider-prev" type="button">Предыдущее фото</button>
-            <img class="slider-image" src="#" alt="Длинная складная палка для селфи">
+            <img class="slider-image" src="images/slider/selfie-stick.png" alt="Длинная складная палка для селфи">
             <button class="slider-button slider-next" type="button">Следующее</button>
           </div>
           <div class="slider-description-current">
@@ -114,20 +117,20 @@
             <button class="button" type="button">Подробнее</button>
             <table class="characteristics-device">
               <tr>
-                <td class="characteristic-value"><b>8,5 м</b></td>
-                <td class="characteristic-value"><b>5 кг</b></td>
-                <td class="characteristic-value"><b>Карбон</b></td>
+                <td class="characteristic-value"><span>8,5 м</span></td>
+                <td class="characteristic-value"><span>5 кг</span></td>
+                <td class="characteristic-value"><span>Карбон</span></td>
               </tr>
               <tr>
-                <th class="characteristic-name">Длина палки</th>
-                <th class="characteristic-name">Вес палки</th>
-                <th class="characteristic-name">Материал</th>
+                <th class="characteristic-name"><span>Длина палки</span></th>
+                <th class="characteristic-name"><span>Вес палки</span></th>
+                <th class="characteristic-name"><span>Материал</span></th>
               </tr>
             </table>
           </div>
         </div>
       </section>
-      <h2 class="visually-hidden">Услугу</h2>
+      <h2 class="visually-hidden">Услуги</h2>
       <!-- Service list -->
       <ul class="service-list">
         <li class="service-item">
@@ -185,24 +188,26 @@
           <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img class="advantages-image" src="#" alt="Стремимся доставить ваш товар в кратчайшие сроки">
+          <img class="advantages-image" src="images/delivery-man.svg" alt="Стремимся доставить ваш товар в кратчайшие сроки">
         </div>
         <div class="advantages-description visually-hidden">
           <h3 class="advantages-title">Гарантия</h3>
           <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
-          <img class="advantages-image" src="#" alt="Гарантируем бесплатную замену товара">
+          <img class="advantages-image" src="images/warranty.svg" alt="Гарантируем бесплатную замену товара">
         </div>
         <div class="advantages-description visually-hidden">
           <h3 class="advantages-title">Кредит</h3>
           <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          <img class="advantages-image" src="#" alt="Товар вы можете взять в кредит">
+          <img class="advantages-image" src="images/credit.svg" alt="Товар вы можете взять в кредит">
         </div>
       </section>
       <h2 class="visually-hidden">Доставка товара</h2> 
       <button class="button button-delivery">
+        <img class="button-delivery-car" src="images/icon-car-delivery.svg" alt="">
         <span>Доставим редкий товар под заказ</span>
+        <img src="images/icon-explanation.svg" alt="Пояснение">
       </button>
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
@@ -244,7 +249,7 @@
       </section>
       <section class="mailing">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <p class="mailing-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
             <input type="email" name="user-mail" placeholder="Ваш e-mail" >
@@ -260,7 +265,7 @@
         <h2 class="page-footer-title visually-hidden">Контакты</h2>
         <img class="page-footer-logo" src="images/foooter/logo.svg" width="145" height="36" alt="Логотип Device">
         <address class="contact-addres">
-          <a class="contact-addres-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+          <a class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
         </address>
       </section>
       
@@ -298,7 +303,7 @@
       <section class="footer-contacts">
         <h2 class="page-footer-title visually-hidden">Наш номер телефона</h2>
         <address class="contact-addres">
-          <a  class="contact-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+          <a  class="footer-contact-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
         </address>
         <a href="https://htmlacademy.ru/">
           <img src="images/foooter/logo-htmlacademy.svg" width="115" height="33" alt="Логотип .html academy">
