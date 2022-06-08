@@ -65,9 +65,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
 }
 
 .navigation-list-advantages  {
@@ -75,9 +72,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
 }
 
 .navigation-list-advantages .navigation-link {
@@ -97,7 +91,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    font-display: row;
+    flex-direction: row;
     list-style: none;
     justify-content: space-between;
 }
@@ -206,9 +200,6 @@ body {
 
 /* Service */
 .service-list { 
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -242,7 +233,11 @@ body {
 
 
 /* List */
-
+.reset-list { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .pagination { 
     list-style-type: none;
@@ -271,9 +266,6 @@ body {
 .advantages-list {
     height: 190px;
     width: 280px; 
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -470,14 +462,12 @@ button {
 }
 
 .footer-advantages-list { 
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .footer-social-list  { 
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -524,7 +514,6 @@ button {
 
 .breadcrumbs { 
     color :#000000;
-    list-style-type: none;
 }
 
 .breadcrumbs a { 
@@ -535,7 +524,6 @@ button {
     text-decoration: none;
     color: #000000;
 }
-
 
 
 .catalog-container { 
