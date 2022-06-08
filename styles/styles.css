@@ -22,7 +22,15 @@
     font-display: swap;
 }
 
+html { 
+    height: 100%;
+}
+
 body { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -32,10 +40,72 @@ body {
 
 /* Page header */
 .page-header { 
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
     color: #000000;
     background-color:#ffe17f;
 }
+
+.header-logo-link {
+    margin-left: 60px;
+    display: inline-block;
+}
 /* Navigation */
+.navigation { 
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.navigation-list  {
+    width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-list-advantages  {
+    width: 472px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-list-advantages .navigation-link {
+    width: 73px;
+    text-transform: uppercase;
+}
+
+.navigation-login { 
+    width: 230px;
+}
+.navigation-capabilities { 
+    width: 240px;
+}
+
+.login,
+.user-capabilities { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-display: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navigation-search  {
+    width: 517px;    
+}
+
 .navigation-link { 
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -64,6 +134,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    width: 293px;
 }
 
 /* Gallery */
@@ -73,18 +144,55 @@ body {
     color: #ffffff;
     background-color: #ffe17f;
     align-items: center;
+    width: 1160px;
+    line-height: 135px;
+    position: absolute;
+    z-index: -1;
+} 
+.gallery { 
+    margin: 0;
+    padding: 0;
+    width: 1160px;
 }
+.slider-button {
+    width: 20px;
+    height: 40px;
+    align-self: center;
+}
+
 .gallery-image-title { 
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    width: 560px;
+}
+
+.gallery-item { 
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+}
+
+.slider-description { 
+    width: 560px;
+}
+
+.device  {
+    width: 560px;
+    height: 560px;
+    display: flex;
 }
 
 .gallery-image-description { 
     color: #444444;
 }
 
+.characteristics-device {
+    border-spacing: 20px;
+}
 
 .characteristic-value{
     font-size: 36px;
@@ -97,7 +205,24 @@ body {
 }
 
 /* Service */
+.service-list { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1160px;
+}
+
+.service-item { 
+    width: 160px;
+
+}
+
 .service-link  {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
 }
 
@@ -117,9 +242,8 @@ body {
 
 
 /* List */
-.service-list,
-.advantages-list,
-.navigation-list,
+
+
 .pagination { 
     list-style-type: none;
     margin: 0;
@@ -135,12 +259,29 @@ body {
     opacity: 0.3;
     text-decoration: none;
 } 
-
 /* Advantages */
 .advantages { 
+    margin: 0;
+    padding: 0;
     background-color: #F0F0F0;
+    display: flex;
+    /* justify-content: space-between; */
 }
-.advantages-title { 
+
+.advantages-list {
+    height: 190px;
+    width: 280px; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advantages-title {
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -148,7 +289,16 @@ body {
 }
 
 .advantages-text { 
+    width: 452px;
     color: #444444;
+}
+
+.advantages-description { 
+    display: flex;
+    flex-direction: row;
+    width: 694px;
+    margin-left: 116px;
+    justify-content: space-between;
 }
 /* Button */
 button {
@@ -161,15 +311,27 @@ button {
 }
 
 .button-delivery { 
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
     background-color: #F0F0F0;
 }
+
 
 .button-delivery-car { 
     background-color: #ffe17f;
 }
+
+
 /* About us and Contact */
-.about-us,
-.contacts { 
+.container-info { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-us { 
+    width: 520px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -177,8 +339,21 @@ button {
     color: #444444;
 }
 
+.contacts { 
+    width: 532px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
 
-.mailing-title,
+.about-us-description,
+.contact-description { 
+    width: 497px;
+}
+
+
 .about-us-title,
 .contact-title  { 
     font-family: 'Raleway', sans-serif;
@@ -198,7 +373,9 @@ button {
     text-transform: uppercase;
     color: #000000;
 }
-
+.contact-addres-text { 
+    width: 509px;
+}
 .contact-phone { 
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -209,9 +386,12 @@ button {
 
 /* Mailing */
 .mailing { 
+    width: 100%;
     background-color: #F0F0F0;
 }
-
+.mailing-description { 
+    display: flex;
+}
 .transport-company-list { 
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
@@ -219,8 +399,19 @@ button {
     line-height: 20px;
     color: #000000;
 }
-
+.mailing-title { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px; 
+    width: 348px;
+}
 .mailing-text  {
+    margin-left: 252px;
+    padding: 0;
+    width: 560px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -228,17 +419,43 @@ button {
     color: #444444;
 }
 
+.submit-email { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mailing-form { 
+    width: 810px;
+}
 /* Footer */
 
 .page-footer { 
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 321px;
+    margin: 0 auto;
     background-color: #444444;
+}
+
+.page-footer-container {
+    display: flex; 
+    flex-direction: row;
+    margin: 0 auto; 
+    width: 1160px;
+    justify-content: space-between;
+}
+.page-footer-logo { 
+    display: block;
 }
 
 .page-footer a { 
     color: #ffffff;
 }
 
-a.contact-address-text { 
+.page-footer .contact-address-text { 
+    width: 175px;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -246,7 +463,25 @@ a.contact-address-text {
     line-height: 20px;
 
 }
+.page-footer-advantages { 
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+}
 
+.footer-advantages-list { 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-social-list  { 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .page-footer-link { 
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -255,7 +490,9 @@ a.contact-address-text {
     text-decoration: none;
     color: #ffffff;
 }
-
+.footer-contacts { 
+    width: 249px;
+}
 .footer-contact-phone  {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -265,6 +502,18 @@ a.contact-address-text {
     color: #ffffff;
 }
 
+.footer-contacts-phone { 
+    width: 175px;
+}
+
+.inner-header {
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 161px;
+    display: block;
+    width: 1079px;
+    background-color: #fff;
+}
 
 .inner-header-title { 
     font-family: 'Raleway', sans-serif;
@@ -287,6 +536,22 @@ a.contact-address-text {
     color: #000000;
 }
 
+
+
+.catalog-container { 
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 140px;
+}
+
+.catalog-product { 
+    width: 320px;
+}
+
+.sorting-product { 
+    width: 840px;
+}
 .catalog-product-title,
 .sorting-product-title { 
     font-family: 'Raleway', sans-serif;
@@ -322,6 +587,16 @@ a.contact-address-text {
 }
 
 /* Main */
+.main-container {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .main-inner { 
     background-color: #F0F0F0;
+    width: 1440px;
 }
+
