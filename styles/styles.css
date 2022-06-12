@@ -759,7 +759,16 @@ button {
   padding: 0;
 }
 
-.pagination a {
+/* .pagination-item {
+
+} */
+
+.pagination-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px 16px;
+  box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -771,13 +780,14 @@ button {
 
 .pagination-button {
   padding: 25px;
+  cursor: pointer;
 }
 
 .pagination-block {
   margin: 0 auto;
   width: 760px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   background-color: #EBEBEB;
 }
