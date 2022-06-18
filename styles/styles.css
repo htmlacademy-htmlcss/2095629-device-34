@@ -192,6 +192,8 @@ body {
   font-size: 180px;
   color: #ffffff;
   background-color: #ffe17f;
+  box-sizing: border-box;
+  padding-right: 49px;
   align-items: center;
   text-align: end;
   line-height: 135px;
@@ -231,7 +233,10 @@ body {
 
 .slider-description {
   width: 560px;
-  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-top: 101px;
+  align-items: flex-start;
 }
 
 .device {
@@ -252,18 +257,25 @@ body {
 }
 
 .characteristics-device {
-  border-spacing: 20px 12px;
-  margin-bottom: 24px;
+  margin: 0;
+  display: grid;
+  row-gap: 12px;
+  column-gap: 20px;
+  justify-items: flex-start;
 }
 
-.characteristic-value {
+.characteristics-device dd{
+  margin: 0;
   font-size: 36px;
   line-height: 30px;
+  grid-row: 1/2;
 }
 
-.characteristic-name {
+.characteristics-device dt {
   font-size: 16px;
   color: #444444;
+  font-weight: 700;
+  grid-row: 2/3;
 }
 
 /* Service */
@@ -703,6 +715,7 @@ button {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  align-self: center;
 }
 .catalog-right-column {
   padding-top: 40px;
@@ -715,9 +728,24 @@ button {
 }
 
 .list-products {
-  margin: 0;
+  width: 760px;
+  display: grid;
+  grid-template-columns: repeat(2,360px);
+  column-gap: 40px;
+  row-gap: 44px;
   margin-bottom: 44px;
-  list-style-type: none;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+}
+.product-description {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .product-card-link {
@@ -725,7 +753,15 @@ button {
   color: #000000;
 }
 
+.product-card-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  background-color: #F0F0F0;
+}
+
 .product-card-title {
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
