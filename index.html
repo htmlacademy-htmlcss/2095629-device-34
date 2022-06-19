@@ -63,8 +63,9 @@
       </nav>
     </header>
     <!-- Main -->
-    <main class="main-index main-container">
-      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+    <main class="main-index">
+      <div class="main-container">
+        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <!-- Gallery -->
       <section class="gallery">
         <h2 class="visually-hidden">Рекомендуемые устройства</h2>
@@ -87,16 +88,12 @@
               замаскированным под стандартную камеру.
             </p>
             <button class="button button-more-detailed" type="button">Подробнее</button>
-            <table class="characteristics-device">
-              <tr>
-                <td class="characteristic-value"><span>800 м</span></td>
-                <td class="characteristic-value"><span>50 м</span></td>
-              </tr>
-              <tr>
-                <th class="characteristic-name"><span>Дальность полета</span></th>
-                <th class="characteristic-name"><span>Радиус поражения</span></th>
-              </tr>
-            </table>
+            <dl class="characteristics-device">
+              <dt>Дальность полета</dt>
+              <dd>800 м</dd>
+              <dt>Радиус поражения</dt>
+              <dd>50 м</dd>
+            </dl>
           </div>
         </div>
         <div class="gallery-item visually-hidden">
@@ -117,14 +114,10 @@
               занятия и соблюдать диету.
             </p>
             <button class="button" type="button">Подробнее</button>
-            <table class="characteristics-device">
-              <tr>
-                <td class="characteristic-value"><span>48 часов</span></td>
-              </tr>
-              <tr>
-                <th class="characteristic-name"><span>Без подзарядки</span></th>
-              </tr>
-            </table>
+            <dl class="characteristics-device">
+              <dt>Без подзарядки</dt>
+              <dd>48 часов</dd>
+            </dl>
           </div>
         </div>
         <div class="gallery-item visually-hidden">
@@ -141,22 +134,20 @@
               (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
             <button class="button" type="button">Подробнее</button>
-            <table class="characteristics-device">
-              <tr>
-                <td class="characteristic-value"><span>8,5 м</span></td>
-                <td class="characteristic-value"><span>5 кг</span></td>
-                <td class="characteristic-value"><span>Карбон</span></td>
-              </tr>
-              <tr>
-                <th class="characteristic-name"><span>Длина палки</span></th>
-                <th class="characteristic-name"><span>Вес палки</span></th>
-                <th class="characteristic-name"><span>Материал</span></th>
-              </tr>
-            </table>
+            <dl class="characteristics-device">
+              <dt>Длина палки</dt>
+              <dd>8,5 м</dd>
+              <dt>Вес палки</dt>
+              <dd>5 кг</dd>
+              <dt>Материал</dt>
+              <dd>Карбон</dd>
+            </dl>
           </div>
         </div>
       </section>
-      <h2 class="visually-hidden">Услуги</h2>
+      </div>
+      <div class="main-container">
+        <h2 class="visually-hidden">Услуги</h2>
       <!-- Service list -->
       <ul class="service-list reset-list">
         <li class="service-item">
@@ -196,44 +187,50 @@
           </a>
         </li>
       </ul>
+      </div>
+
       <!-- Advantages list-->
       <section class="advantages">
-        <ul class="advantages-list reset-list">
-          <li class="advantages-item">
-            <button class="button button-active" type="button">Доставка</button>
-          </li>
-          <li class="advantages-item">
-            <button class="button" type="button">Гарантия</button>
-          </li>
-          <li class="advantages-item">
-            <button class="button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <div class="advantages-description">
-          <div class="advantages-all-text">
-            <h3 class="advantages-title">Доставка</h3>
-            <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно! Ведь<br>
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <div class="wrapper">
+          <ul class="advantages-list reset-list">
+            <li class="advantages-item">
+              <button class="button button-active" type="button">Доставка</button>
+            </li>
+            <li class="advantages-item">
+              <button class="button" type="button">Гарантия</button>
+            </li>
+            <li class="advantages-item">
+              <button class="button" type="button">Кредит</button>
+            </li>
+          </ul>
+          <div class="advantages-description">
+            <div class="advantages-all-text">
+              <h3 class="advantages-title">Доставка</h3>
+              <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно! Ведь<br>
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <img class="advantages-image" src="images/delivery-man.svg"
+              alt="Стремимся доставить ваш товар в кратчайшие сроки.">
           </div>
-          <img class="advantages-image" src="images/delivery-man.svg"
-            alt="Стремимся доставить ваш товар в кратчайшие сроки.">
+          <div class="advantages-description visually-hidden">
+            <h3 class="advantages-title">Гарантия</h3>
+            <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+            <img class="advantages-image" src="images/warranty.svg" alt="Гарантируем бесплатную замену товара.">
+          </div>
+          <div class="advantages-description visually-hidden">
+            <h3 class="advantages-title">Кредит</h3>
+            <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            <img class="advantages-image" src="images/credit.svg" alt="Товар вы можете взять в кредит.">
+          </div>
         </div>
-        <div class="advantages-description visually-hidden">
-          <h3 class="advantages-title">Гарантия</h3>
-          <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-          <img class="advantages-image" src="images/warranty.svg" alt="Гарантируем бесплатную замену товара.">
-        </div>
-        <div class="advantages-description visually-hidden">
-          <h3 class="advantages-title">Кредит</h3>
-          <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-            наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          <img class="advantages-image" src="images/credit.svg" alt="Товар вы можете взять в кредит.">
-        </div>
+
       </section>
-      <h2 class="visually-hidden">Доставка товара</h2>
+      <div class="main-container">
+        <h2 class="visually-hidden">Доставка товара</h2>
       <button class="button button-delivery">
         <img class="button-delivery-car" src="images/icon-car-delivery.svg" alt="Кнопка-машина.">
         <span>Доставим редкий товар под заказ</span>
@@ -279,19 +276,21 @@
           <a class="contact-link" href="#">Напишите нам</a>
         </section>
       </div>
+      </div>
+
       <section class="mailing">
-        <div class="mailing-description">
+        <div class="mailing-description wrapper">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными,
             тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
-        <div class="submit-email">
+        <div class="submit-email wrapper">
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
             <label>
               <input class="input-email" type="email" name="user-mail" placeholder="Ваш e-mail">
             </label>
             <button class="button button-subscribe" type="submit">Подписаться</button>
-          </form>svg
+          </form>
           <span class="signature-free">Это бесплатно</span>
         </div>
       </section>
