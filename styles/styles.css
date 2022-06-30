@@ -104,6 +104,7 @@ body {
 .navigation-list-advantages .navigation-link {
   width: 73px;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .navigation-login {
@@ -209,17 +210,18 @@ body {
 /* Gallery */
 .gallery-item-number {
   position: absolute;
-  width: 1160px;
-  font-weight: 700;
-  font-size: 180px;
+  z-index: -1;
   color: #ffffff;
   background-color: #ffe17f;
-  box-sizing: border-box;
-  padding-right: 49px;
-  align-items: center;
+  width: 1040px;
+  padding-left: 70px;
+  padding-right: 50px;
   text-align: end;
+  vertical-align: bottom;
+  font-size: 180px;
+  font-weight: 700;
   line-height: 135px;
-  z-index: -1;
+  height: 128px;
 }
 
 .gallery {
