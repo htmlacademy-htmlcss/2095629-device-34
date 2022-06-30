@@ -253,8 +253,20 @@ body {
 
 .slider-button {
   width: 20px;
-  height: 40px;
+  height: 60px;
   align-self: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider-prev {
+  margin-left: 30px;
+  background-image: url("../images/slider/arrow-prev.svg");
+}
+
+.slider-next {
+  margin-left: 510px;
+  background-image: url("..//images/slider/arrow-next.svg");
 }
 
 .gallery-image-title {
@@ -286,11 +298,9 @@ body {
 }
 
 .device {
-  z-index: 1;
   width: 560px;
   height: 560px;
   display: flex;
-
 }
 
 .gallery-image-description {
