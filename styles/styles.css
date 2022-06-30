@@ -279,7 +279,7 @@ body {
 }
 
 /* Service */
-ul.service-list {
+.service-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -295,6 +295,39 @@ ul.service-list {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+}
+/* <-- Service items : ...-->*/
+.box  {
+  background-color: #ffe17f;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 32px;
+}
+
+.glasses-virtual-reallity {
+  background-image: url("..//images/glasses-virtual-reallity.svg");
+}
+
+.selfie-stick {
+  background-image: url("..//images/selfie-stick.svg");
+}
+
+.action-camera {
+  background-image: url("..//images/action-camera.svg");
+}
+
+.fitness-bracelet {
+  background-image: url("..//images/fitness-bracelet.svg");
+}
+
+.watch {
+  background-image: url("..//images/watch.svg");
+}
+
+.quadrocopter {
+  background-image: url("..//images/quadrocopter.svg");
 }
 
 .service-name {
