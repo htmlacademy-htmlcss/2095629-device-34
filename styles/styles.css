@@ -472,6 +472,35 @@ button {
   background-color: inherit;
 }
 
+.transport-company-list {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: #000000;
+  list-style-type: none;
+}
+
+.transport-company-item {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 19px;
+}
+
+.transport-company-item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #FFCC33;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+}
+
 .button-delivery {
   margin-bottom: 70px;
   padding: 0;
@@ -481,6 +510,19 @@ button {
   align-items: center;
   justify-content: space-between;
   background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.button-delivery:hover .icon-delivery-car {
+  background-color: #FFCC33;
+}
+
+.button-delivery:hover .icon-explation {
+  opacity: 1;
+}
+
+.button-delivery:active {
+  opacity: 0.3;
 }
 
 .icon-delivery-car {
@@ -510,6 +552,7 @@ button {
   background-position: center;
   background-color: rgba(220, 220, 220, 0.5);
   border-radius: 50%;
+  opacity: 0.3;
 }
 
 /* About us and Contact */
@@ -653,35 +696,6 @@ button {
   padding-bottom:  144px;
 }
 
-.transport-company-list {
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  margin-top: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  line-height: 20px;
-  color: #000000;
-  list-style-type: none;
-}
-
-.transport-company-item {
-  position: relative;
-  padding-left: 34px;
-  margin-bottom: 19px;
-}
-
-.transport-company-item::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #FFCC33;
-  border-radius: 50%;
-  top: 6px;
-  left: 0;
-}
-
 .mailing-title {
   margin: 0;
   padding: 0;
@@ -710,8 +724,14 @@ button {
   line-height: 30px;
   margin: 0;
   width: 557px;
+  height: 63px;
+  box-sizing: border-box;
   border: 0;
+  border-bottom: 3px solid #C4C4C4;
   background-color: inherit;
+  padding-top: 11px;
+  padding-left: 16px;
+  padding-bottom: 11px;
 }
 
 .submit-email {
@@ -724,15 +744,37 @@ button {
 
 .button-subscribe {
   margin: 0;
+  box-sizing: border-box;
+  width: 253px;
+  padding: 18px 39px;
   letter-spacing: 0.2em;
+  border: 3px solid #C4C4C4;
+
 }
 
 .mailing-form {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   width: 810px;
 }
 
+.signature-free {
+  position: relative;
+  margin-left: auto;
+  padding-left: 32px;
+  align-self: center;
+  color: #444444;
+}
+.signature-free::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 7px;
+  left: 0;
+  background-image: url("..//images/icon-confirmation.svg");
+  background-repeat: no-repeat;
+}
 /* Footer */
 .page-footer {
   display: flex;
