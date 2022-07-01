@@ -310,19 +310,90 @@ body {
 }
 
 .button-more-detailed {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
   letter-spacing: 0.2em;
+  padding: 0 39px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.button-more-detailed::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 4px;
+  position: absolute;
+  background-color: #ffe17f;
+  z-index: -1;
+}
+
+.button-more-detailed:hover::before  {
+  height: 40px;
+  top: -10px;
+}
+
+.button-more-detailed:active::before {
+  background-color: #FFCC33;
 }
 
 .block-more-detailed {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  height: 40px;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 49px;
 }
+
 .slider-disc-list {
   display: flex;
+  height: 12px;
+  margin-bottom: 6px;
+  align-items: flex-end;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-disc {
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.button-disc:hover,
+.button-disc-current:hover {
+  opacity: 0.6;
+}
+
+.button-disc:active,
+.button-disc-current:active {
+  opacity: 0.3;
+}
+
+.button-disc:last-child {
+  margin-right: 0;
+}
+
+
+.button-disc-current {
+  cursor: pointer;
+  background-color: #000000;
 }
 
 .characteristics-device {
@@ -365,6 +436,9 @@ body {
   flex-direction: column;
   text-decoration: none;
 }
+
+
+
 /* <-- Service items : ...-->*/
 .box  {
   background-color: #ffe17f;
@@ -375,6 +449,13 @@ body {
   margin-bottom: 32px;
 }
 
+.box:hover {
+  background-color: #FFC700;
+}
+
+.service-item:active {
+  opacity: 0.3;
+}
 .glasses-virtual-reallity {
   background-image: url("..//images/glasses-virtual-reallity.svg");
 }
@@ -412,6 +493,7 @@ body {
   color: #000000;
   background-color: #ffe17f;
 }
+
 
 /* List */
 .reset-list {
@@ -798,10 +880,6 @@ button {
   margin-bottom: 35px;
 }
 
-.page-footer a {
-  color: #ffffff;
-}
-
 .page-footer .contact-address-text {
   width: 175px;
   font-family: "Rubik", sans-serif;
@@ -809,6 +887,7 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
 }
 
 .page-footer-advantages {
@@ -822,7 +901,27 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
+}
+
+.footer-advantages-item {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-right: 35px;
+}
+
+.footer-advantages-item:last-child {
+  margin-right: 0;
+}
+
+.page-footer-link:hover {
+  color: #FFC700;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #FFC700;
+}
+
+.page-footer-link:active {
+  opacity: 0.3;
 }
 
 .footer-social-list {
@@ -835,12 +934,55 @@ button {
 .footer-social-item {
   width: 40px;
   height: 40px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
   margin-right: 15px;
+  cursor: pointer;
+}
+
+.footer-social-item:hover {
+  background-color: #FFC700;
+}
+
+.footer-social-item:active .footer-social {
+  opacity: 0.3;
+}
+
+.footer-social  {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-telegram {
+  width: 14px;
+  height: 12px;
+  top: 14px;
+  left: 12px;
+  background-image: url("..//images/foooter/social/telegram.svg");
+}
+
+.footer-youtube {
+  width: 16px;
+  height: 11px;
+  top: 15px;
+  left: 12px;
+  background-image: url("..//images/foooter/social/youtube.svg");
+}
+
+.footer-twitter {
+  width: 15px;
+  height: 14px;
+  top: 13px;
+  left: 13px;
+  background-image: url("..//images/foooter/social/twitter.svg");
 }
 
 .footer-social-item:last-child {
   margin-right: 0;
 }
+
 .page-footer-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -852,8 +994,17 @@ button {
 
 .footer-contacts {
   width: 249px;
+  position: relative;
 }
 
+.footer-contacts::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+  bottom: 0;
+}
 .footer-contact-phone {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -863,11 +1014,22 @@ button {
   color: #ffffff;
 }
 
+.footer-contact-phone:hover {
+  color: #FFC700;
+}
+
+.footer-contact-phone:active {
+  opacity: 0.3;
+}
+
 .contact-addres {
   font-style: normal;
   margin-bottom: 30px;
 }
 
+.footer-contact-addres {
+  margin-bottom: 63px;
+}
 .footer-contacts-phone {
   width: 175px;
   display: flex;
