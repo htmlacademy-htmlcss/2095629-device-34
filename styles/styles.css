@@ -294,7 +294,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .device {
@@ -474,14 +474,42 @@ button {
 
 .button-delivery {
   margin-bottom: 70px;
+  padding: 0;
   width: 1160px;
+  height: 100px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #f0f0f0;
 }
 
-.button-delivery-car {
+.icon-delivery-car {
+  width: 125px;
+  height: inherit;
+  background-image: url("..//images/icon-car-delivery.svg");
   background-color: #ffe17f;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.delivery-text {
+  max-width: 910px;
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.icon-explation {
+  margin: 30px auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("..//images/icon-explanation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
 }
 
 /* About us and Contact */
