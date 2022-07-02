@@ -1650,8 +1650,28 @@ button {
 .product-card {
   display: flex;
   flex-direction: column;
-
+  position: relative;
 }
+
+.new-product {
+  top: 27px;
+  right: 27px;
+  position: absolute;
+  width: 40px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  font-family: 'Raleway';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  padding-top: 19px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 19px;
+  opacity: 0.6;
+}
+
 .product-description {
   margin-top: 32px;
   display: flex;
