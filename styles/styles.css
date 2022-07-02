@@ -69,6 +69,19 @@ body {
   cursor: pointer;
 }
 
+.header-logo-link:hover {
+  opacity: 0.6;
+}
+
+.page-header-logo:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.header-logo-link:active {
+  opacity: 0.3;
+}
+
 /* Navigation */
 .navigation {
   width: 1040px;
@@ -127,6 +140,18 @@ body {
   background-position: 0 center;
 }
 
+.name-login:hover {
+  opacity: 0.6;
+}
+
+.name-login:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.name-login:active {
+  opacity: 0.3;
+}
 .login-escape {
   opacity: 0.3;
   text-decoration: none;
@@ -162,9 +187,27 @@ body {
   color: #000000;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .navigation-search {
   width: 517px;
   display: flex;
+}
+
+.navigation-search label:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
 }
 
 .navigation-input-search {
@@ -173,6 +216,7 @@ body {
   padding-top: 8px;
   padding-left: 48px;
   padding-bottom: 8px;
+  box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   background-color: #ffe17f;
@@ -191,7 +235,10 @@ body {
   opacity: 0.3;
 }
 
-
+.navigation-input-search:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
 .search-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -204,6 +251,20 @@ body {
   color: #000000;
 }
 
+.search-link:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.navigation-search:focus-within a {
+  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: none;
+}
+
+.search-link:active {
+  color:rgba(255, 255, 255, 0.3)
+}
+
 .navigation-list:first-of-type .navigation-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -213,14 +274,42 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  height: 30px;
   font-weight: 400;
   text-transform: capitalize;
   border: 0;
+  position: relative;
   cursor: pointer;
-  padding-left: 25px;
+  padding-left: 43px;
   background-image: url("..//images/header/cart.svg");
   background-repeat: no-repeat;
-  background-position: 0 center;
+  background-position: 18px center;
+}
+
+.shop-cart-user::before {
+  content: "2";
+  position: absolute;
+  font-size: 14px;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 0;
+  top: calc((30px - 21px)/2) ;
+}
+
+.shop-cart-user:hover {
+  opacity: 0.6;
+}
+
+.shop-cart-user:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.shop-cart-user:active {
+  opacity: 0.3;
 }
 
 .product-catalog {
@@ -372,9 +461,14 @@ body {
   display: flex;
   width: 100%;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: baseline;
   justify-content: space-between;
   margin-bottom: 49px;
+}
+
+.block-more-detailed ul {
+  width: 96px;
+  margin-right: -10px;
 }
 
 .slider-disc {
@@ -382,8 +476,8 @@ body {
   width: 22px;
   height: 22px;
   position: relative;
-  margin-right: 20px;
   padding: 5px;
+  margin-left: 5px;
   box-sizing: border-box;
 }
 
@@ -400,10 +494,6 @@ body {
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.slider-disc:last-child {
-  margin-right: 0;
 }
 
 .button-disc:hover{
@@ -1059,6 +1149,25 @@ button {
   margin-bottom: 35px;
 }
 
+.page-footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo-link {
+  display: block;
+  width: 145px;
+  cursor: pointer;
+}
+
+.footer-logo-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.page-footer-logo:active {
+  opacity: 0.3;
+}
+
 .page-footer .contact-address-text {
   width: 175px;
   font-family: "Rubik", sans-serif;
@@ -1099,6 +1208,11 @@ button {
   border-bottom: 2px solid #FFC700;
 }
 
+.page-footer-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
 .page-footer-link:active {
   opacity: 0.3;
 }
@@ -1124,6 +1238,12 @@ button {
   background-color: #FFC700;
 }
 
+.footer-social-item:focus {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
 .footer-social-item:active .footer-social {
   opacity: 0.3;
 }
@@ -1197,6 +1317,10 @@ button {
   color: #FFC700;
 }
 
+.footer-contact-phone:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
 .footer-contact-phone:active {
   opacity: 0.3;
 }
@@ -1209,11 +1333,30 @@ button {
 .footer-contact-addres {
   margin-bottom: 63px;
 }
+
 .footer-contacts-phone {
   width: 175px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.logo-htmlacademy-link svg {
+  fill: #FFC700;
+}
+
+.logo-htmlacademy-link svg:hover {
+  fill: #ffffff;
+}
+
+.logo-htmlacademy-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.logo-htmlacademy-link svg:active {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .inner-header {
