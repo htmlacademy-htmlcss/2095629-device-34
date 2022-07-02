@@ -1392,6 +1392,19 @@ button {
   height: 19px;
 }
 
+.breadcrumbs-link:hover {
+  color:rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumbs-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.breadcrumbs-link:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+
 .breadcrumbs-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -1529,6 +1542,7 @@ button {
   height: 30px;
   align-items: center;
 }
+
 .button-catalog-up,
 .button-catalog-down {
   margin: 0;
@@ -1551,6 +1565,24 @@ button {
   opacity: 0.2;
 }
 
+.button-catalog-up:hover::before,
+.button-catalog-down:hover::before {
+  opacity: 0.5;
+}
+
+.button-catalog-up:focus,
+.button-catalog-down:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+
+.button-catalog-up:active::before,
+.button-catalog-down:active::before {
+  opacity: 1;
+}
+
+
 .catalog-product-title {
   margin-top: 25px;
   margin-bottom: 60px;
@@ -1567,6 +1599,21 @@ button {
   box-sizing: border-box;
   height: 30px;
   padding: 0;
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.select-control:active {
+  opacity: 0.3;
 }
 
 .sorting-product-title {
