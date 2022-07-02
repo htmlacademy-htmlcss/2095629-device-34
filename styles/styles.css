@@ -603,8 +603,14 @@ button {
   opacity: 1;
 }
 
+.button-delivery:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
 .button-delivery:active {
   opacity: 0.3;
+  box-shadow: none;
 }
 
 .icon-delivery-car {
