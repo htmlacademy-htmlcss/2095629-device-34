@@ -333,9 +333,58 @@ body {
 .product-catalog {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  box-sizing: border-box;
   width: 293px;
+  height: 50px;
+  padding: 15px 0;
+  margin: 0;
   letter-spacing: 0.2em;
   text-align: start;
+  position: relative;
+}
+
+.product-catalog::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.sub-catalog {
+  opacity: 0.3;
+}
+
+.sub-catalog::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  top: 25px;
+  right: 17px;
+  background-color: #000000;
+}
+
+.sub-catalog::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  top: 25px;
+  right: 17px;
+  background-color: #000000;
+  transform: rotate(90deg);
+}
+
+
+.product-catalog:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* Gallery */
