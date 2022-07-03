@@ -74,8 +74,8 @@ body {
 }
 
 .page-header-logo:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .header-logo-link:active {
@@ -195,8 +195,8 @@ body {
 }
 
 .navigation-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .navigation-link:active {
@@ -206,11 +206,6 @@ body {
 .navigation-search {
   width: 517px;
   display: flex;
-}
-
-.navigation-search label:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
 }
 
 .navigation-input-search {
@@ -240,31 +235,51 @@ body {
 
 .navigation-input-search:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
 }
+
+.navigation-search label:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
+}
+
 .search-link {
+  display: block;
+  height: 40px;
+  width: 160px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.search-link-text {
+  position: absolute;
+  left: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
+  width: 160px;
+  height: 40px;
   padding: 8px 54px;
+  box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
-  text-decoration: none;
-  color: #000000;
 }
 
-.search-link:hover {
+
+.search-link-text:hover {
   color: #ffffff;
   background-color: #000000;
 }
 
-.navigation-search:focus-within a {
-  box-shadow: 0 0 0 2px #AF4FFF;
-  outline: none;
+.search-link:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px ;
 }
 
-.search-link:active {
+.search-link:active .search-link-text{
   color:rgba(255, 255, 255, 0.3)
 }
 
@@ -307,8 +322,8 @@ body {
 }
 
 .shop-cart-user:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .shop-cart-user:active {
@@ -363,8 +378,8 @@ body {
 }
 
 .slider-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .slider-button:active {
@@ -452,8 +467,7 @@ body {
 }
 
 .button-more-detailed:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
 }
 
 .button-more-detailed:active::before {
@@ -504,8 +518,11 @@ body {
 }
 
 .slider-disc:focus-within  {
+  outline: solid 2px #AF4FFF;
+}
+
+.slider-disc:focus-within .button-disc{
   outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
 }
 
 .button-disc:active{
@@ -579,9 +596,9 @@ body {
   background-color: #FFC700;
 }
 
-.service-link:focus{
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+.service-link:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .service-item:active {
@@ -758,8 +775,7 @@ button {
 }
 
 .button-advantages:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
 }
 
 .button-advantages:active::before {
@@ -787,9 +803,9 @@ button {
   color: rgba(255, 225, 127, 0.5);
 }
 
-.advantages-item .button-active:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+.button-active:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .button-active:active {
@@ -846,13 +862,12 @@ button {
 }
 
 .button-delivery:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .button-delivery:active {
   opacity: 0.3;
-  box-shadow: none;
 }
 
 .icon-delivery-car {
@@ -991,8 +1006,7 @@ button {
 
 .contact-link:focus,
 .about-us-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
 }
 
 .contact-link:active::before,
@@ -1022,8 +1036,8 @@ button {
 }
 
 .contact-phone:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 .contact-schedule {
   margin: 0;
@@ -1163,8 +1177,8 @@ button {
 }
 
 .footer-logo-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .page-footer-logo:active {
@@ -1212,8 +1226,8 @@ button {
 }
 
 .page-footer-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px  #AF4FFF;
+  outline-offset: 2px;
 }
 
 .page-footer-link:active {
@@ -1241,43 +1255,42 @@ button {
   background-color: #FFC700;
 }
 
-.footer-social-item:focus {
-  width: 40px;
-  height: 40px;
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
-}
 .footer-social-item:active .footer-social {
   opacity: 0.3;
 }
 
-.footer-social  {
+.footer-social {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.footer-social:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
+}
+
 .footer-telegram {
   width: 14px;
   height: 12px;
-  top: 14px;
-  left: 12px;
+  padding: 14px 13px;
   background-image: url("..//images/foooter/social/telegram.svg");
 }
 
 .footer-youtube {
   width: 16px;
   height: 11px;
-  top: 15px;
-  left: 12px;
+  padding-top: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 14px;
   background-image: url("..//images/foooter/social/youtube.svg");
 }
 
 .footer-twitter {
   width: 15px;
   height: 14px;
-  top: 13px;
-  left: 13px;
+  padding: 13px;
   background-image: url("..//images/foooter/social/twitter.svg");
 }
 
@@ -1321,9 +1334,10 @@ button {
 }
 
 .footer-contact-phone:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
+
 .footer-contact-phone:active {
   opacity: 0.3;
 }
@@ -1353,8 +1367,8 @@ button {
 }
 
 .logo-htmlacademy-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .logo-htmlacademy-link svg:active {
@@ -1646,11 +1660,21 @@ button {
   row-gap: 44px;
   margin-bottom: 44px;
 }
+.card {
+  width: 360px;
+  height: 380px;
+  position: relative;
+}
 
 .product-card {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 360px;
+}
+
+.product-card:hover {
+  opacity: 0.6;
 }
 
 .new-product {
@@ -1670,6 +1694,37 @@ button {
   padding-right: 8px;
   padding-bottom: 19px;
   opacity: 0.6;
+}
+
+.more-detailed-card {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: auto;
+  height: 40px;
+  width: 220px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 0.2em;
+  padding: 8px 23px;
+  position: absolute;
+  z-index: 1;
+}
+
+.more-detailed-card::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 15px;
+  position: absolute;
+  background-color: #ffe17f;
+  z-index: -1;
 }
 
 .product-description {
