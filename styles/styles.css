@@ -1189,7 +1189,21 @@ button {
   padding: 18px 39px;
   letter-spacing: 0.2em;
   border: 3px solid #C4C4C4;
+}
 
+.button-subscribe:hover {
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.button-subscribe:focus  {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
+}
+
+.button-subscribe:active {
+  color: rgba(255, 225, 255, 0.3)
 }
 
 .mailing-form {
@@ -1871,6 +1885,20 @@ button {
   width: 760px;
   padding: 15px;
   border: 3px solid #E5E5E5;
+  letter-spacing: 0.2em;
+}
+
+.button-show-more:hover {
+  border-color: #000000;
+}
+
+.button-show-more:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
+}
+
+.button-show-more:active {
+  opacity: 0.3;
 }
 
 .pagination {
@@ -1892,14 +1920,29 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
   opacity: 0.3;
   text-decoration: none;
+}
+
+.pagination-link:hover {
+  color: rgba(68, 68, 68, 1);
+}
+
+.pagination-link:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
+}
+
+.pagination-link:active {
+  color: rgba(68, 68, 68, 0.1);
 }
 
 .pagination-button {
   padding: 25px;
   cursor: pointer;
+  letter-spacing: 0.2em;
+  box-sizing: border-box;
 }
 
 .pagination-block {
@@ -1909,6 +1952,19 @@ button {
   align-items: baseline;
   justify-content: space-between;
   background-color: #EBEBEB;
+}
+
+.pagination-button:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-button:focus  {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
+}
+
+.pagination-button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Main */
