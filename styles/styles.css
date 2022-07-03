@@ -59,6 +59,15 @@ body {
   background-color: #ffe17f;
 }
 
+.page-header-catalog {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 186px;
+  color: #000000;
+  background-color: #ffe17f;
+}
+
 .header-logo-link {
   margin-top: -20px;
   margin-left: 60px;
@@ -152,11 +161,17 @@ body {
 .name-login:active {
   opacity: 0.3;
 }
+
 .login-escape {
   opacity: 0.3;
   text-decoration: none;
   margin-left: auto;
   bottom: 0;
+}
+
+.login-escape:focus {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .navigation-capabilities {
@@ -341,6 +356,14 @@ body {
   letter-spacing: 0.2em;
   text-align: start;
   position: relative;
+}
+
+.product-catalog:hover::after {
+  opacity: 1;
+}
+
+.product-catalog:hover .sub-catalog {
+  opacity: 1;
 }
 
 .product-catalog::after {
@@ -1460,8 +1483,8 @@ button {
 }
 
 .breadcrumbs-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .breadcrumbs-link:active {
@@ -1577,10 +1600,8 @@ button {
 }
 
 .button-filter-show:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
 }
-
 
 .button-filter-show:active::before {
   background-color: #FFCC33;
@@ -1635,8 +1656,8 @@ button {
 
 .button-catalog-up:focus,
 .button-catalog-down:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 
@@ -1659,6 +1680,10 @@ button {
 
 .select-control {
   margin: auto 0;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   box-sizing: border-box;
   height: 30px;
   padding: 0;
@@ -1671,8 +1696,8 @@ button {
 }
 
 .select-control:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .select-control:active {
