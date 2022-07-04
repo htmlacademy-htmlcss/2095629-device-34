@@ -254,10 +254,15 @@ body {
   outline: none;
 }
 
+.navigation-input-search:disabled {
+  opacity: 0.3;
+}
+
 .search-form label:focus {
   outline: solid 2px #AF4FFF;
   outline-offset: 2px;
 }
+
 
 .search-button {
   display: block;
@@ -278,6 +283,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  text-transform: capitalize;
   width: 160px;
   height: 40px;
   padding: 8px 54px;
@@ -285,7 +291,6 @@ body {
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
 }
-
 
 .search-button-text:hover {
   color: #ffffff;
@@ -301,6 +306,14 @@ body {
   color:rgba(255, 255, 255, 0.3)
 }
 
+.search-button:disabled {
+  opacity: 0.3;
+}
+
+.search-button:disabled .search-button-text:hover{
+  background-color: inherit;
+  color: #000000;
+}
 .navigation-list:first-of-type .navigation-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
