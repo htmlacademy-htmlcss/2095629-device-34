@@ -15,11 +15,15 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list reset-list">
-          <li class="navigation-item navigation-search">
-            <label tabindex="2">
-              <input class="navigation-input-search" type="search" tabindex="-1" placeholder="Текст поиска">
-            </label>
-            <a class="search-link" href="#"><span class="search-link-text">Найти</span></a>
+          <li class="navigation-item">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label tabindex="0">
+                <input class="navigation-input-search" type="search" placeholder="Текст поиска">
+              </label>
+              <button class="search-button" type="submit">
+                <span class="search-button-text">Найти</span>
+              </button>
+            </form>
           </li>
           <li class="navigation-item navigation-login">
             <ul class="login">
@@ -86,36 +90,60 @@
             <!-- Form catalog filer-->
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px;">
+                      <button class="range-toggle toggle-min" type="button"></button>
+                      <button class="range-toggle toggle-max" type="button"></button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label  class="catalog-filter-label" tabindex="0">
+                      от <input class="range-input" type="number" value="0" name="min-price" tabindex="-1">
+                    </label>
+                    <label class="catalog-filter-label" tabindex="0">
+                      до <input class="range-input" type="number" value="5000" name="max-price" tabindex="-1">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list reset-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="black-color" checked>
-                      Черный
+                      <input class="input-control visually-hidden" type="checkbox" name="black-color" checked tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="white-color" checked>
-                      Белый
+                      <input class="input-control visually-hidden" type="checkbox" name="white-color" checked tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="blue-color">
-                      Синий
+                      <input  class="input-control visually-hidden" type="checkbox" name="blue-color" tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="red-color">
-                      Красный
+                      <input class="input-control visually-hidden" type="checkbox" name="red-color" tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="pink-color">
-                      Розовый
+                      <input class="input-control visually-hidden" type="checkbox" name="pink-color" tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -125,14 +153,16 @@
                 <ul class="catalog-filter-list reset-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="radio" name="bluetooth" checked>
-                      Есть
+                      <input class="input-control visually-hidden" type="radio" name="bluetooth" checked tabindex="-1">
+                      <span class="control-mark control-mark-radio" tabindex="0"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="radio" name="bluetooth">
-                      Нет
+                      <input class="input-control visually-hidden" type="radio" name="bluetooth" tabindex="-1">
+                      <span class="control-mark control-mark-radio" tabindex="0"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
@@ -180,7 +210,7 @@
                   <a class="catalog-more-detailed">Подробнее</a>
                   <div class="product-description">
                     <h3 class="product-card-title">Профессиональная<br> селфи-палка </h3>
-                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </li>
                 <li class="product-card" tabindex="0">
@@ -192,7 +222,7 @@
                   <a class="catalog-more-detailed">Подробнее</a>
                   <div class="product-description">
                     <h3 class="product-card-title">Непотопляемая<br> селфи-палка </h3>
-                    <span class="product-card-price">2500 ₽</span>
+                    <span class="product-card-price">2 500 ₽</span>
                   </div>
                 </li>
                 <li class="product-card" tabindex="0">
@@ -204,7 +234,7 @@
                   <a class="catalog-more-detailed">Подробнее</a>
                   <div class="product-description">
                     <h3 class="product-card-title">Селфи-палка «Следуй за<br> мной»</h3>
-                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </li>
               </ul>
