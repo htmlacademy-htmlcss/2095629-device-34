@@ -121,6 +121,7 @@ body {
 
 .navigation-item {
   line-height: 21px;
+  position: relative;
 }
 
 .navigation-list-advantages {
@@ -373,6 +374,59 @@ body {
   letter-spacing: 0.2em;
   text-align: start;
   position: relative;
+}
+
+
+.popover-subcatalog {
+  position: absolute;
+  display: none;
+  width: 1160px;
+  height: 160px;
+  top: 56px;
+  left: -60px;
+  padding-top: 14px;
+  padding-left: 60px;
+  padding-bottom: 27px;
+  box-sizing: border-box;
+  background-color: #FFE17F;
+}
+
+.subcatalog-active {
+  display: flex;
+}
+
+.subcatalog-active + .product-catalog .sub-catalog::before   {
+    transform: rotate(0deg);
+}
+
+.popover-subcatalog a:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.subcatalog-list {
+  padding: 0;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.subcatalog-list:last-child {
+  margin-right: 0;
+}
+
+.subcatalog-item a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.subcatalog-item + .subcatalog-item {
+  margin-top: 1em;
+}
+
+.navigation-item:focus-within .popover-subcatalog {
+  display: flex;
 }
 
 .product-catalog:hover::after {
