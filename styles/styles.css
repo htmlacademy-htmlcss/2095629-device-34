@@ -218,9 +218,11 @@ body {
   opacity: 0.3;
 }
 
-.navigation-search {
+.search-form {
   width: 517px;
   display: flex;
+  position: relative;
+  justify-content: flex-start;
 }
 
 .navigation-input-search {
@@ -252,12 +254,12 @@ body {
   outline: none;
 }
 
-.navigation-search label:focus {
+.search-form label:focus {
   outline: solid 2px #AF4FFF;
   outline-offset: 2px;
 }
 
-.search-link {
+.search-button {
   display: block;
   height: 40px;
   width: 160px;
@@ -267,8 +269,9 @@ body {
   flex-shrink: 0;
 }
 
-.search-link-text {
+.search-button-text {
   position: absolute;
+  top: 0;
   left: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -284,17 +287,17 @@ body {
 }
 
 
-.search-link-text:hover {
+.search-button-text:hover {
   color: #ffffff;
   background-color: #000000;
 }
 
-.search-link:focus {
+.search-button:focus {
   outline: solid 2px #AF4FFF;
   outline-offset: 2px ;
 }
 
-.search-link:active .search-link-text{
+.search-button:active .search-link-text{
   color:rgba(255, 255, 255, 0.3)
 }
 
@@ -1165,11 +1168,30 @@ button {
   height: 63px;
   box-sizing: border-box;
   border: 0;
+  color: rgba(68, 68, 68, 1);
   border-bottom: 3px solid #C4C4C4;
   background-color: inherit;
   padding-top: 11px;
   padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 11px;
+}
+
+.input-email::placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.input-email:focus {
+  outline: none;
+  background-color: #DCDCDC;
+}
+
+.input-email:disabled {
+  opacity: 0.3;
+}
+
+.input-email-error {
+  border-color: #ff3d3d;
 }
 
 .submit-email {

@@ -16,11 +16,15 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list reset-list">
-          <li class="navigation-item navigation-search">
-            <label tabindex="2">
-              <input class="navigation-input-search" type="search" tabindex="-1" placeholder="Текст поиска">
-            </label>
-            <a class="search-link" href="#"><span class="search-link-text">Найти</span></a>
+          <li class="navigation-item">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label>
+                <input class="navigation-input-search" type="search"placeholder="Текст поиска">
+              </label>
+              <button class="search-button" href="#">
+                <span class="search-button-text">Найти</span>
+              </button>
+            </form>
           </li>
           <li class="navigation-item navigation-login">
             <ul class="login">
