@@ -555,59 +555,57 @@ body {
   margin-bottom: 49px;
 }
 
-.block-more-detailed ul {
-  width: 96px;
-  margin-right: -10px;
-}
-
-.slider-disc {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  position: relative;
-  padding: 5px;
-  margin-left: 5px;
-  box-sizing: border-box;
-}
-
-.button-disc {
-  position: absolute;
-  top: 5px;
-  left: 5px;
+.slider-pagination {
+  display: flex;
+  justify-self: center;
   padding: 0;
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  margin-top: auto;
   width: 12px;
   height: 12px;
-  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: auto;
+}
+
+.slider-pagination-item:last-child {
+  margin-right: 0;
+}
+
+
+.slider-pagination-button {
+  position: absolute;
+  width: 12px;
+  height: 12px;
   border: 2px solid #000000;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.button-disc:hover{
+.slider-pagination-button-active {
+  background-color: #000000;
+}
+
+.slider-pagination-button:hover{
   opacity: 0.6;
 }
 
-.slider-disc:focus-within  {
+.slider-pagination-item:focus-within  {
   outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
-.slider-disc:focus-within .button-disc{
+.slider-pagination-item:focus-within .slider-pagination-button {
   outline: none;
 }
 
-.button-disc:active{
+.slider-pagination-button:active{
   opacity: 0.3;
-}
-
-.button-disc:last-child {
-  margin-right: 0;
-}
-
-.button-disc-current {
-  cursor: pointer;
-  background-color: #000000;
 }
 
 .characteristics-device {
