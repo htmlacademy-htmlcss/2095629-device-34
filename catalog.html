@@ -208,7 +208,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button button-filter-show" type="submit">Показать</button>
+              <button class="button-filter-show" type="submit">Показать</button>
             </form>
           </section>
           <section class="sorting-product">
@@ -369,6 +369,58 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-order">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group">
+              <label class="modal-field label-user-name">
+                <span class="modal-field-title">Ваше имя:</span>
+                <input class="order-form-field modal-user-name" type="text" name="user-name" placeholder="Введите имя">
+                <span class="form-field-subtext">Добавьте имя</span>
+              </label>
+              <label class="modal-field label-user-email">
+                <span class="modal-field-title">Ваш e-mail:</span>
+                <input class="order-form-field modal-user-email" disabled type="email" name="user-email" content="почта"
+                  placeholder="Введите ваш e-mail">
+                <span class="form-field-subtext">Забавный у вас адрес</span>
+              </label>
+              <label class="modal-field label-order-comment">
+                <span class="modal-field-title">Что нужно привезти:</span>
+                <input class="order-form-field order-comment" type="text" name="user-order-comment"
+                  placeholder="В свободной форме">
+              </label>
+              <div class="modal-field">
+                <label class="label-order-quantity" for="order-quantity">
+                  <span class="modal-field-title">Количество:</span>
+                  <div class="icon-modal-explation" tabindex="0"></div>
+                  <div class="icon-explation-description">
+                    <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                      к провозу багажа.</p>
+                  </div>
+                </label>
+                <div class="order-quantity">
+                  <button class="quantity-change-button button-quantity-down" type="button">
+                    <span class="visually-hidden">Уменьшить количество заказа</span>
+                  </button>
+                  <input class="input-order-quantity" id="order-quantity" type="number" value="1" name="order-quantity">
+                  <button class="quantity-change-button button-quantity-up" type="button">
+                    <span class="visually-hidden">Увеличить количество заказа</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="modal-submit-button" type="submit">
+              <span class="text-sumbit-button">Отправить</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
