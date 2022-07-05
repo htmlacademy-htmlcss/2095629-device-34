@@ -15,35 +15,80 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list reset-list">
-          <li class="navigation-item navigation-search">
-            <label tabindex="2">
-              <input class="navigation-input-search" type="search" tabindex="-1" placeholder="Текст поиска">
-            </label>
-            <a class="search-link" href="#"><span class="search-link-text">Найти</span></a>
+          <li class="navigation-item">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label tabindex="2">
+                <input class="navigation-input-search" type="search" tabindex="3" placeholder="Текст поиска">
+              </label>
+              <button class="search-button" type="submit" tabindex="4">
+                <span class="search-button-text">Найти</span>
+              </button>
+            </form>
           </li>
           <li class="navigation-item navigation-login">
             <ul class="login">
               <li class="navigation-item">
-                <a class="name-login" href="#">Коля Петухов</a>
+                <a class="name-login" href="#" tabindex="5">Коля Петухов</a>
               </li>
               <li class="navigation-item">
-                <a class="login-escape" href="#">Выйти</a>
+                <a class="login-escape" href="#" tabindex="6">Выйти</a>
               </li>
             </ul>
           </li>
           <li class="navigation-item navigation-capabilities">
             <ul class="user-capabilities">
               <li class="navigation-item">
-                <a class="navigation-link compare-icon" href="#">Сравнить</a>
+                <a class="navigation-link compare-icon" href="#" tabindex="7">Сравнить</a>
               </li>
               <li class="navigation-item">
-                <button class="shop-cart-user" type="button">Корзина</button>
-              </li>
+                <button class="shop-cart-user" type="button" tabindex="8">Корзина</button>
+                <div class="popover-cart">
+                  <ul class="cart-list">
+                    <li class="cart-item cart-clear-no">Корзина пуста</li>
+                    <li class="cart-item">
+                      <div class="cart-item-info" tabindex="0">
+                        <img src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                        <span>Любительская<br>селфи-палка</span>
+                      </div>
+                      <button class="delete-cart-item"></button>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-info" tabindex="0">
+                        <img src="images/catalog/product-2.jpg" width="39" height="43"
+                          alt="Профессиональная селфи-палка">
+                        <span>Профессиональная<br>селфи-палка</span>
+                      </div>
+                      <button class="delete-cart-item"></button>
+                    </li>
+                  </ul>
+                  <div class="quantity-cost">
+                    <span class="quantity">Товаров: 2</span>
+                    <span class="cost">Сумма: 2000 ₽</span>
+                  </div>
+                  <div class="box-open-cart">
+                    <button class="open-cart" type="button">Открыть корзину</button>
+                  </div>
+                </div>
             </ul>
         </ul>
         <ul class="navigation-list reset-list">
           <li class="navigation-item">
-            <button class="product-catalog" type="button">Каталог товаров<span class="sub-catalog"></span></button>
+            <div class="popover-subcatalog">
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="subcatalog-item"><a href="#">Моноподы для cелфи</a></li>
+                <li class="subcatalog-item"><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="subcatalog-item"><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item"><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+            <button class="product-catalog" type="button" tabindex="9">Каталог товаров<span
+                class="sub-catalog"></span></button>
           </li>
           <li class="navigation-item">
             <ul class="navigation-list-advantages reset-list">
@@ -86,36 +131,60 @@
             <!-- Form catalog filer-->
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px;">
+                      <button class="range-toggle toggle-min" type="button"></button>
+                      <button class="range-toggle toggle-max" type="button"></button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label  class="catalog-filter-label" tabindex="0">
+                      от <input class="range-input" type="number" value="0" name="min-price" tabindex="-1">
+                    </label>
+                    <label class="catalog-filter-label" tabindex="0">
+                      до <input class="range-input" type="number" value="5000" name="max-price" tabindex="-1">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list reset-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="black-color" checked>
-                      Черный
+                      <input class="input-control visually-hidden" type="checkbox" name="black-color" checked tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="white-color" checked>
-                      Белый
+                      <input class="input-control visually-hidden" type="checkbox" name="white-color" checked tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="blue-color">
-                      Синий
+                      <input  class="input-control visually-hidden" type="checkbox" name="blue-color" tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="red-color">
-                      Красный
+                      <input class="input-control visually-hidden" type="checkbox" name="red-color" tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="checkbox" name="pink-color">
-                      Розовый
+                      <input class="input-control visually-hidden" type="checkbox" name="pink-color" tabindex="-1">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -125,19 +194,21 @@
                 <ul class="catalog-filter-list reset-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="radio" name="bluetooth" checked>
-                      Есть
+                      <input class="input-control visually-hidden" type="radio" name="bluetooth" checked tabindex="-1">
+                      <span class="control-mark control-mark-radio" tabindex="0"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="input-control" type="radio" name="bluetooth">
-                      Нет
+                      <input class="input-control visually-hidden" type="radio" name="bluetooth" tabindex="-1">
+                      <span class="control-mark control-mark-radio" tabindex="0"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="button button-filter-show" type="submit">Показать</button>
+              <button class="button-filter-show" type="submit">Показать</button>
             </form>
           </section>
           <section class="sorting-product">
@@ -180,7 +251,7 @@
                   <a class="catalog-more-detailed">Подробнее</a>
                   <div class="product-description">
                     <h3 class="product-card-title">Профессиональная<br> селфи-палка </h3>
-                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </li>
                 <li class="product-card" tabindex="0">
@@ -192,7 +263,7 @@
                   <a class="catalog-more-detailed">Подробнее</a>
                   <div class="product-description">
                     <h3 class="product-card-title">Непотопляемая<br> селфи-палка </h3>
-                    <span class="product-card-price">2500 ₽</span>
+                    <span class="product-card-price">2 500 ₽</span>
                   </div>
                 </li>
                 <li class="product-card" tabindex="0">
@@ -204,7 +275,7 @@
                   <a class="catalog-more-detailed">Подробнее</a>
                   <div class="product-description">
                     <h3 class="product-card-title">Селфи-палка «Следуй за<br> мной»</h3>
-                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </li>
               </ul>
@@ -298,6 +369,60 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-order">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group">
+              <label class="modal-field label-user-name">
+                <span class="modal-field-title">Ваше имя:</span>
+                <input class="order-form-field modal-user-name" type="text" name="user-name" placeholder="Введите имя">
+                <span class="form-field-subtext">Добавьте имя</span>
+              </label>
+              <label class="modal-field label-user-email">
+                <span class="modal-field-title">Ваш e-mail:</span>
+                <input class="order-form-field modal-user-email" disabled type="email" name="user-email" content="почта"
+                  placeholder="Введите ваш e-mail">
+                <span class="form-field-subtext">Забавный у вас адрес</span>
+              </label>
+              <label class="modal-field label-order-comment">
+                <span class="modal-field-title">Что нужно привезти:</span>
+                <input class="order-form-field order-comment" type="text" name="user-order-comment"
+                  placeholder="В свободной форме">
+              </label>
+              <div class="modal-field">
+                <div class="title-order-quantity">
+                  <label class="label-order-quantity" for="order-quantity">
+                    <span class="modal-field-title">Количество:</span>
+                  </label>
+                    <div class="icon-modal-explation" tabindex="0"></div>
+                    <div class="tooltip">
+                      <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                        к провозу багажа.</p>
+                    </div>
+                  </div>
+                <div class="order-quantity">
+                  <button class="quantity-change-button button-quantity-down" type="button">
+                    <span class="visually-hidden">Уменьшить количество заказа</span>
+                  </button>
+                  <input class="input-order-quantity" id="order-quantity" type="number" value="1" name="order-quantity">
+                  <button class="quantity-change-button button-quantity-up" type="button">
+                    <span class="visually-hidden">Увеличить количество заказа</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="modal-submit-button" type="submit">
+              <span class="text-sumbit-button">Отправить</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
