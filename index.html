@@ -68,7 +68,7 @@
                   <div class="box-open-cart">
                     <button class="open-cart" type="button">Открыть корзину</button>
                   </div>
-              </li>
+              </div>
             </ul>
         </ul>
         <ul class="navigation-list reset-list">
@@ -487,14 +487,16 @@
                   placeholder="В свободной форме">
               </label>
               <div class="modal-field">
-                <label class="label-order-quantity" for="order-quantity">
-                  <span class="modal-field-title">Количество:</span>
-                  <div class="icon-modal-explation" tabindex="0"></div>
-                  <div class="icon-explation-description">
-                    <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                      к провозу багажа.</p>
+                <div class="title-order-quantity">
+                  <label class="label-order-quantity" for="order-quantity">
+                    <span class="modal-field-title">Количество:</span>
+                  </label>
+                    <div class="icon-modal-explation" tabindex="0"></div>
+                    <div class="tooltip">
+                      <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                        к провозу багажа.</p>
+                    </div>
                   </div>
-                </label>
                 <div class="order-quantity">
                   <button class="quantity-change-button button-quantity-down" type="button">
                     <span class="visually-hidden">Уменьшить количество заказа</span>

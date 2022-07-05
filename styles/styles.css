@@ -2586,6 +2586,10 @@ button {
   width: 540px;
 }
 
+.title-order-quantity {
+  width: 180px;
+  position: relative;
+}
 
 .label-order-quantity {
   position: relative;
@@ -2604,7 +2608,7 @@ button {
   background-repeat: no-repeat;
 }
 
-.icon-explation-description {
+.tooltip {
   position: absolute;
   display: none;
   top: 36px;
@@ -2616,7 +2620,7 @@ button {
   color: #ffffff;
 }
 
-.icon-explation-description::before {
+.tooltip::before {
   position: absolute;
   top: -3px;
   left: 146px;
@@ -2627,18 +2631,18 @@ button {
   transform: rotate(45deg);
 }
 
-.icon-explation-description p {
+.tooltip p {
   padding: 0;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
 }
 
-.icon-modal-explation:hover + .icon-explation-description {
+.icon-modal-explation:hover + .tooltip {
   display: block;
 }
 
-.icon-modal-explation:focus + .icon-explation-description {
+.icon-modal-explation:focus + .tooltip {
   display: block;
 }
 
