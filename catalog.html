@@ -17,10 +17,10 @@
         <ul class="navigation-list reset-list">
           <li class="navigation-item">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label tabindex="0">
-                <input class="navigation-input-search" type="search" placeholder="Текст поиска">
+              <label tabindex="2">
+                <input class="navigation-input-search" type="search" tabindex="3" placeholder="Текст поиска">
               </label>
-              <button class="search-button" type="submit">
+              <button class="search-button" type="submit" tabindex="4">
                 <span class="search-button-text">Найти</span>
               </button>
             </form>
@@ -28,26 +28,67 @@
           <li class="navigation-item navigation-login">
             <ul class="login">
               <li class="navigation-item">
-                <a class="name-login" href="#">Коля Петухов</a>
+                <a class="name-login" href="#" tabindex="5">Коля Петухов</a>
               </li>
               <li class="navigation-item">
-                <a class="login-escape" href="#">Выйти</a>
+                <a class="login-escape" href="#" tabindex="6">Выйти</a>
               </li>
             </ul>
           </li>
           <li class="navigation-item navigation-capabilities">
             <ul class="user-capabilities">
               <li class="navigation-item">
-                <a class="navigation-link compare-icon" href="#">Сравнить</a>
+                <a class="navigation-link compare-icon" href="#" tabindex="7">Сравнить</a>
               </li>
               <li class="navigation-item">
-                <button class="shop-cart-user" type="button">Корзина</button>
+                <button class="shop-cart-user" type="button" tabindex="8">Корзина</button>
+                <div class="popover-cart">
+                  <ul class="cart-list">
+                    <li class="cart-item cart-clear-no">Корзина пуста</li>
+                    <li class="cart-item">
+                      <div class="cart-item-info" tabindex="0">
+                        <img src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                        <span>Любительская<br>селфи-палка</span>
+                      </div>
+                      <button class="delete-cart-item"></button>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-info" tabindex="0">
+                        <img src="images/catalog/product-2.jpg" width="39" height="43"
+                          alt="Профессиональная селфи-палка">
+                        <span>Профессиональная<br>селфи-палка</span>
+                      </div>
+                      <button class="delete-cart-item"></button>
+                    </li>
+                  </ul>
+                  <div class="quantity-cost">
+                    <span class="quantity">Товаров: 2</span>
+                    <span class="cost">Сумма: 2000 ₽</span>
+                  </div>
+                  <div class="box-open-cart">
+                    <button class="open-cart" type="button">Открыть корзину</button>
+                  </div>
               </li>
             </ul>
         </ul>
         <ul class="navigation-list reset-list">
           <li class="navigation-item">
-            <button class="product-catalog" type="button">Каталог товаров<span class="sub-catalog"></span></button>
+            <div class="popover-subcatalog">
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="subcatalog-item"><a href="#">Моноподы для cелфи</a></li>
+                <li class="subcatalog-item"><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="subcatalog-item"><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item"><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+            <button class="product-catalog" type="button" tabindex="9">Каталог товаров<span
+                class="sub-catalog"></span></button>
           </li>
           <li class="navigation-item">
             <ul class="navigation-list-advantages reset-list">
