@@ -30,12 +30,45 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-width: 1440px;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   background-color: #ffffff;
+}
+
+/* Main */
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-index  {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-catalog {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-inner {
+  background-color: #f0f0f0;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -831,9 +864,11 @@ body {
 .slider-pagination-button {
   position: absolute;
   width: 12px;
+  padding: 0;
   height: 12px;
   border: 2px solid #000000;
   background-color: #ffffff;
+  box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -2418,25 +2453,7 @@ button {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Main */
-.wrapper {
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
-}
 
-.main-container {
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.main-inner {
-  background-color: #f0f0f0;
-  width: 100%;
-}
 
 /* <-- Modal window--> */
 .modal-container {
@@ -2449,7 +2466,7 @@ button {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
-.modal-active  {
+.modal-active {
   display: flex;
 }
 
@@ -2564,7 +2581,7 @@ button {
   outline: solid 2px #FF3D3D;
 }
 
-.modal-user-email.error  + .form-field-subtext {
+.modal-user-email.error + .form-field-subtext {
   color: #FF3D3D;
 }
 
