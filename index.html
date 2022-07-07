@@ -41,7 +41,7 @@
                 <a class="navigation-link compare-icon" href="#" tabindex="7">Сравнить</a>
               </li>
               <li class="navigation-item cart">
-                <button class="shop-cart-user" type="button" tabindex="8">Корзина</button>
+                <button class="shop-cart-user" type="button" tabindex="8"><span class="shop-cart-indecator">2</span>Корзина</button>
                 <div class="popover-cart">
                   <ul class="cart-list">
                     <li class="cart-item cart-clear-no">Корзина пуста</li>
@@ -114,7 +114,9 @@
         <section class="gallery">
           <h2 class="visually-hidden">Рекомендуемые устройства</h2>
           <div class="gallery-item">
-            <span class="gallery-item-number">01</span>
+            <div class="box-number-slider">
+              <span class="gallery-item-number">01</span>
+            </div>
             <div class="device">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -160,7 +162,9 @@
             </div>
           </div>
           <div class="gallery-item visually-hidden">
-            <span class="gallery-item-number">02</span>
+            <div class="box-number-slider">
+              <span class="gallery-item-number">02</span>
+          </div>
             <div class="device">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -204,7 +208,9 @@
             </div>
           </div>
           <div class="gallery-item visually-hidden">
-            <span class="gallery-item-number">03</span>
+            <div class="box-number-slider">
+              <span class="gallery-item-number">03</span>
+            </div>
             <div class="device">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -375,7 +381,7 @@
               <a class="contact-addres-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
               <a class="contact-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
             </address>
-            <h3 class="contacts-subtitle">Время работы</h3>
+            <h3 class="contact-subtitle">Время работы</h3>
             <ul class="contact-schedule">
               <li class="contact-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contact-schedule-item">сб—вс: с 10:00 до 19:00</li>
@@ -396,7 +402,7 @@
             <label>
               <input class="input-email" type="email" name="user-mail" placeholder="Ваш e-mail">
             </label>
-            <button class="button button-subscribe" type="submit">Подписаться</button>
+            <button class="button-subscribe" type="submit">Подписаться</button>
           </form>
           <span class="signature-free">Это бесплатно</span>
         </div>
@@ -473,11 +479,11 @@
               <label class="modal-field label-user-name">
                 <span class="modal-field-title">Ваше имя:</span>
                 <input class="order-form-field modal-user-name" type="text" name="user-name" placeholder="Введите имя">
-                <span class="form-field-subtext">Добавьте имя</span>
+                <span class="form-field-subtext visually-hidden">Добавьте имя</span>
               </label>
               <label class="modal-field label-user-email">
                 <span class="modal-field-title">Ваш e-mail:</span>
-                <input class="order-form-field modal-user-email" disabled type="email" name="user-email" content="почта"
+                <input class="order-form-field  modal-user-email error" type="email" name="user-email" content="почта"
                   placeholder="Введите ваш e-mail">
                 <span class="form-field-subtext">Забавный у вас адрес</span>
               </label>
