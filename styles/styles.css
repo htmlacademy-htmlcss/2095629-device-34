@@ -2582,8 +2582,8 @@ button {
 
 .modal-close-button {
   position: absolute;
-  top: 74px;
-  right: 96px;
+  top: 73px;
+  right: 70px;
   width: 26px;
   height: 26px;
   padding: 0;
@@ -2677,6 +2677,7 @@ button {
 
 .modal-user-email.error {
   outline: solid 2px #FF3D3D;
+  outline-offset: -2px;
 }
 
 .modal-user-email.error + .form-field-subtext {
@@ -2704,6 +2705,8 @@ button {
 .title-order-quantity {
   width: 180px;
   position: relative;
+  margin-top: -7px;
+  margin-bottom: 7px;
 }
 
 .label-order-quantity {
