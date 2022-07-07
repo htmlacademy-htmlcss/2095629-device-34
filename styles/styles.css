@@ -93,10 +93,10 @@ body {
 }
 
 .page-header-catalog {
-  margin-top: 40px;
+  margin-top: 38px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 186px;
+  min-height: 188px;
   color: #000000;
   background-color: #ffe17f;
 }
@@ -140,6 +140,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -429,8 +430,8 @@ body {
 .popover-cart {
   position: absolute;
   z-index: 1;
-  top: 36px;
-  right: -77px;
+  top: 38px;
+  right: -72px;
   width: 320px;
   min-height: 218px;
   box-sizing: border-box;
@@ -541,6 +542,11 @@ body {
   height: 44px;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   align-items: center;
 }
@@ -615,7 +621,7 @@ body {
   display: none;
   width: 1160px;
   height: 160px;
-  top: 56px;
+  top: 52px;
   left: -60px;
   padding-top: 14px;
   padding-left: 60px;
@@ -641,7 +647,11 @@ body {
 .subcatalog-list {
   padding: 0;
   list-style-type: none;
-  margin-right: 50px;
+  margin-right: 60px;
+}
+
+.subcatalog-list:nth-child(2) {
+  margin-right: 70px;
 }
 
 .subcatalog-list:last-child {
@@ -656,7 +666,7 @@ body {
 }
 
 .subcatalog-item + .subcatalog-item {
-  margin-top: 1em;
+  margin-top: 14px;
 }
 
 .navigation-item:focus-within .popover-subcatalog {
@@ -904,6 +914,8 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
+
 
 .slider-pagination-button-active {
   background-color: #000000;
@@ -1608,7 +1620,7 @@ button {
 
 .page-footer-logo {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .page-footer-logo:hover {
@@ -1761,6 +1773,10 @@ button {
   margin-right: 110px;
 }
 
+.footer-contacts .contact-addres {
+  line-height: 20px;
+}
+
 .footer-contacts::before {
   position: absolute;
   content: "";
@@ -1834,7 +1850,7 @@ button {
 }
 
 .inner-header {
-  margin-top: 35px;
+  margin-top: 36px;
   margin-left: 60px;
   margin-bottom: 35px;
   display: block;
@@ -1909,9 +1925,8 @@ button {
 }
 
 .catalog-product {
-  margin-left: 60px;
-  margin-right: 40px;
-  width: 220px;
+  margin: 0 auto;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1919,11 +1934,13 @@ button {
 
 .catalog-filter {
   margin: 0;
+  margin-left: -4px;
   padding: 0;
 }
 
 .range {
   position: relative;
+  margin-bottom: 65px;
 }
 
 .range-scale {
@@ -2019,17 +2036,20 @@ button {
 .catalog-filter-group {
   padding: 0;
   border: 0;
-  margin-bottom: 35px;
 }
 
 .catalog-filter-group:first-child .catalog-filter-title {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
+}
+
+.catalog-filter-list {
+  margin-bottom: 33px;
 }
 
 .catalog-filter-title {
   width: 100%;
-  padding-top: 10px;
-  margin-bottom: 20px;
+  padding-top: 12px;
+  margin-bottom: 21px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -2064,13 +2084,10 @@ button {
 
 .control-mark {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
+  top: -1px;
+  left: 1px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #cccccc;
   border-radius: 3px;
 }
@@ -2140,6 +2157,8 @@ button {
   letter-spacing: 0.2em;
   padding: 8px 23px;
   position: relative;
+  top: 4px;
+  left: 4px;
   z-index: 0;
 }
 
@@ -2231,7 +2250,7 @@ button {
 
 .catalog-product-title {
   margin-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -2426,16 +2445,26 @@ button {
   background-color: #FFCC33;
 }
 
-
-
 /* Pagination */
 
 .button-show-more {
+  display: flex;
+  align-items: center;
   margin: 0 auto 44px;
   width: 760px;
   padding: 15px;
   border: 3px solid #E5E5E5;
   letter-spacing: 0.2em;
+}
+
+.button-show-more > span {
+  margin: auto;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  height: 19px;
 }
 
 .button-show-more:hover {
@@ -2493,6 +2522,11 @@ button {
   cursor: pointer;
   letter-spacing: 0.2em;
   box-sizing: border-box;
+}
+
+.pagination-button-next {
+  padding-left: 28px;
+  padding-right: 22px;
 }
 
 .pagination-block {

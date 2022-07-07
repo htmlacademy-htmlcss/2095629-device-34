@@ -162,7 +162,9 @@
             </div>
           </div>
           <div class="gallery-item visually-hidden">
-            <span class="gallery-item-number">02</span>
+            <div class="box-number-slider">
+              <span class="gallery-item-number">02</span>
+          </div>
             <div class="device">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -206,7 +208,9 @@
             </div>
           </div>
           <div class="gallery-item visually-hidden">
-            <span class="gallery-item-number">03</span>
+            <div class="box-number-slider">
+              <span class="gallery-item-number">03</span>
+            </div>
             <div class="device">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -463,7 +467,7 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container">
+    <div class="modal-container modal-active">
       <div class="modal modal-order">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -475,11 +479,11 @@
               <label class="modal-field label-user-name">
                 <span class="modal-field-title">Ваше имя:</span>
                 <input class="order-form-field modal-user-name" type="text" name="user-name" placeholder="Введите имя">
-                <span class="form-field-subtext">Добавьте имя</span>
+                <span class="form-field-subtext visually-hidden">Добавьте имя</span>
               </label>
               <label class="modal-field label-user-email">
                 <span class="modal-field-title">Ваш e-mail:</span>
-                <input class="order-form-field modal-user-email" disabled type="email" name="user-email" content="почта"
+                <input class="order-form-field  modal-user-email error" type="email" name="user-email" content="почта"
                   placeholder="Введите ваш e-mail">
                 <span class="form-field-subtext">Забавный у вас адрес</span>
               </label>
