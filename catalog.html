@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
   </head>
 
   <body>
@@ -41,20 +42,20 @@
                 <a class="navigation-link compare-icon" href="#" tabindex="7">Сравнить</a>
               </li>
               <li class="navigation-item">
-                <button class="shop-cart-user" type="button" tabindex="8">Корзина</button>
+                <button class="shop-cart-user" type="button" tabindex="8"><span class="shop-cart-indecator">2</span>Корзина</button>
                 <div class="popover-cart">
                   <ul class="cart-list">
                     <li class="cart-item cart-clear-no">Корзина пуста</li>
                     <li class="cart-item">
                       <div class="cart-item-info" tabindex="0">
-                        <img src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                        <img src="images/catalog/product-first.jpg" width="39" height="43" alt="Любительская селфи-палка">
                         <span>Любительская<br>селфи-палка</span>
                       </div>
                       <button class="delete-cart-item"></button>
                     </li>
                     <li class="cart-item">
                       <div class="cart-item-info" tabindex="0">
-                        <img src="images/catalog/product-2.jpg" width="39" height="43"
+                        <img src="images/catalog/product-second.jpg" width="39" height="43"
                           alt="Профессиональная селфи-палка">
                         <span>Профессиональная<br>селфи-палка</span>
                       </div>
@@ -233,7 +234,7 @@
                 <li class="product-card" tabindex="0">
                   <div class="card">
                     <span class="new-product visually-hidden">NEW</span>
-                    <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="380"
+                    <img class="product-card-image" src="images/catalog/product-first.jpg" width="360" height="380"
                       alt="Любительская селфи-палка.">
                   </div>
                   <a class="catalog-more-detailed">Подробнее</a>
@@ -245,7 +246,7 @@
                 <li class="product-card" tabindex="0">
                   <div class="card">
                     <span class="new-product visually-hidden">NEW</span>
-                    <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380"
+                    <img class="product-card-image" src="images/catalog/product-second.jpg" width="360" height="380"
                       alt="Профессиональная селфи-палка.">
                   </div>
                   <a class="catalog-more-detailed">Подробнее</a>
@@ -257,7 +258,7 @@
                 <li class="product-card" tabindex="0">
                   <div class="card">
                     <span class="new-product visually-hidden">NEW</span>
-                    <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="380"
+                    <img class="product-card-image" src="images/catalog/product-third.jpg" width="360" height="380"
                       alt="Непотопляемая селфи-палка.">
                   </div>
                   <a class="catalog-more-detailed">Подробнее</a>
@@ -269,7 +270,7 @@
                 <li class="product-card" tabindex="0">
                   <div class="card">
                     <span class="new-product visually-hidden">NEW</span>
-                    <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="380"
+                    <img class="product-card-image" src="images/catalog/product-fourth.jpg" width="360" height="380"
                         alt="селфи-палка в форме человеческой руки.">
                   </div>
                   <a class="catalog-more-detailed">Подробнее</a>
@@ -381,11 +382,11 @@
               <label class="modal-field label-user-name">
                 <span class="modal-field-title">Ваше имя:</span>
                 <input class="order-form-field modal-user-name" type="text" name="user-name" placeholder="Введите имя">
-                <span class="form-field-subtext">Добавьте имя</span>
+                <span class="form-field-subtext visually-hidden">Добавьте имя</span>
               </label>
               <label class="modal-field label-user-email">
                 <span class="modal-field-title">Ваш e-mail:</span>
-                <input class="order-form-field modal-user-email" disabled type="email" name="user-email" content="почта"
+                <input class="order-form-field modal-user-email error" type="email" name="user-email" content="почта"
                   placeholder="Введите ваш e-mail">
                 <span class="form-field-subtext">Забавный у вас адрес</span>
               </label>

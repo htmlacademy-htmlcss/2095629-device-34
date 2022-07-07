@@ -175,6 +175,11 @@ body {
 
 .navigation-list-advantages .navigation-link {
   width: 73px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -187,8 +192,12 @@ body {
 
 .name-login {
   padding-left: 27px;
-  line-height: 30px;
   color: #000000;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   text-decoration: none;
   background-image: url("../images/header/enter.svg");
   background-repeat: no-repeat;
@@ -209,6 +218,11 @@ body {
 }
 
 .login-escape {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   opacity: 0.3;
   text-decoration: none;
   margin-left: auto;
@@ -542,7 +556,7 @@ body {
   height: 44px;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -659,9 +673,12 @@ body {
 }
 
 .subcatalog-item a {
-  text-decoration: none;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -724,6 +741,7 @@ body {
 .product-catalog:focus {
   outline: solid 2px #AF4FFF;
   outline-offset: 2px;
+  z-index: 1;
 }
 
 /* Gallery */
@@ -741,8 +759,8 @@ body {
   position: absolute;
   bottom: 39px;
   right: 49px;
+  font-family: 'Rubik', sans-serif;
   color: #ffffff;
-  vertical-align: bottom;
   font-size: 180px;
   font-weight: 700;
   line-height: 30px;
@@ -1244,7 +1262,7 @@ button {
 }
 
 .transport-company-name {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2115,9 +2133,12 @@ button {
 }
 
 .control-label {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  color: #000000;
   line-height: 19px;
+  color: #000000;
 }
 
 .input-control:disabled + .control-mark {
@@ -2459,7 +2480,7 @@ button {
 
 .button-show-more > span {
   margin: auto;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
