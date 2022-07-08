@@ -223,10 +223,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  color: #000000;
   opacity: 0.3;
   text-decoration: none;
   margin-left: auto;
-  bottom: 0;
 }
 
 .login-escape:focus {
@@ -673,6 +673,7 @@ body {
 }
 
 .subcatalog-item a {
+  position: relative;
   font-family: 'Rubik',sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -680,6 +681,24 @@ body {
   line-height: 18px;
   text-decoration: none;
   color: #000000;
+}
+
+.subcatalog-item a:hover {
+  opacity: 0.6;
+}
+
+.subcatalog-item a:active {
+  opacity: 0.3;
+}
+
+.subcatalog-item-now a::after{
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #000000;
 }
 
 .subcatalog-item + .subcatalog-item {
